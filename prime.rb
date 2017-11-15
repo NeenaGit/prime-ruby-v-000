@@ -1,11 +1,5 @@
 def prime?(integer)
-   (2..integer).to_a.select do|prime|
-    #  Prime_number = false
-    #  x = 2
-     if (prime % integer == 0)
-       false
-     else
-       true
-     end
+   (2..integer).to_a.none? do|prime|
+   (prime % integer == 0)
    end
 end

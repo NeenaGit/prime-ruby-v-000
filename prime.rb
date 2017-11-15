@@ -6,6 +6,7 @@ def prime?(integer)
        false
      else
        true
+       binding.pry
      end
    end
 end

@@ -3,7 +3,7 @@ def prime?(integer)
      false
   else
     (2..integer).to_a.none? do|prime|
-    (prime % integer == 0)
+    (integer % prime == 0)
     end
  end
 end
